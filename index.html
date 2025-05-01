@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <main>
-        <section id="Login">
+        <section id="login">
             <div id="imagem">
-
+                <img src="imagens/pexels-frank-minjarez-333886454-30993363 (1).jpg" alt="imagem">
             </div>
             <div id="formulario">
                 <h1>Login</h1>
-                <p>Seja bem-vindo novamente!</p>
-                <form action="login.php" method="post">
-                    
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post" id="form">
+                    <input type="email" name="mail" id="imail" placeholder="Email">
+                    <input type="password" name="senha" id="isenha" placeholder="Senha" minlength="8">
+                    <button type="submit" id="submitButton">Entrar</button>
+                    <button id="idkPassButton">Esqueci a senha <label for="imail"><span class="material-symbols-outlined">mail</span></label></button>
                 </form>
             </div>
         </section>

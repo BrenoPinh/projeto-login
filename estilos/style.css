@@ -121,21 +121,3 @@ div#formulario>form>button#idkPassButton:hover{
 .material-symbols-outlined{
     font-size: 15px;
 }
-
-@media (orientation: landscape){
-    body{
-        background-color: var(--lilas);
-    }
-    section#login{
-        display: flex;
-        flex-direction: row-reverse;
-        max-width: 950px;
-        width: 400px;
-        height: 250px;
-    }
-    div#imagem{
-        width: 50%;
-        height: 100%;
-        border-radius: 0px 20px 20px 0px;
-    }
-}

@@ -36,7 +36,10 @@
         display: flex;
         flex-direction: row-reverse;
         max-width: 950px;
-        height: 500px;
+        height: 350px;
+    }
+    section#login>div#formulario>h1{
+        font-size: 2em;
     }
     div#imagem{
         width: 50%;

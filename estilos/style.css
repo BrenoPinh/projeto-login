@@ -35,8 +35,8 @@ main{
 
 section#login{
         background-color: white;
-        width: 250px;
-        height: 500px;
+        width: 280px;
+        height: 550px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.296);
         border-radius: 20px;
 
@@ -53,8 +53,8 @@ div#imagem{
     background: var(--lilas) url(../imagens/city.jpg) no-repeat fixed;
     background-size: cover;
     border-radius: 20px 20px 0px 0px;
-    width: 250px;
-    height: 200px;
+    width: 280px;
+    height: 250px;
 }
 
 div#formulario{
@@ -79,17 +79,38 @@ div#formulario>p{
 div#formulario>form{
     display: flex;
     flex-direction: column;
-}
-
-div#formulario>form{
     gap: 5px;
 }
 
-div#formulario>form>input{
+div.campos{
+    display: block;
+    background-color: var(--lilas);
+    border-radius: 8px;
+    width: 100%;
+    height: 40px;
+    border: 2px solid var(--lilas);
+}
+
+div.campos label{
+    display: none;
+}
+
+div.campos span{
+   color: white;
+   font-size: 2em;
+   width: 40px;
+   padding: 5px;
+}
+
+div#formulario>form input{
     background-color: var(--verde-claro);
-    padding: 5px;
-    border-radius: 5px;
-    text-align: center;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    transform: translateY(-11.5px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
 }
 
 div#formulario>form>button{
@@ -108,6 +129,10 @@ div#formulario>form>button#idkPassButton{
     border: 1px solid var(--verde);
     color: var(--verde-escuro);
     cursor: pointer;
+}
+div#formulario>form>button#idkPassButton>a{
+    color: var(--verde-escuro);
+    text-decoration: none;
 }
 
 div#formulario>form>button#submitButton:hover{

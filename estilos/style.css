@@ -123,6 +123,9 @@ div#formulario>form>button#idkPassButton:hover{
 }
 
 @media screen and (orientation: landscape){
+    body{
+        background-color: var(--lilas);
+    }
     section#login{
         display: flex;
         flex-direction: row-reverse;

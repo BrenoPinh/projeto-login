@@ -17,10 +17,25 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="post" id="form" autocomplete="">
-                    <input type="email" name="mail" id="imail" placeholder="Email" autocomplete="email">
-                    <input type="password" name="senha" id="isenha" placeholder="Senha" minlength="8" autocomplete="current-password">
+                    <div class="campos">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="mail" id="imail" placeholder="Email" autocomplete="email" required>
+                        <label for="imail">
+                            Login
+                        </label>
+                    </div>
+                    <div class="campos">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Senha" minlength="8" autocomplete="current-password" required>
+                        <label for="isenha">
+                            Senha
+                        </label>
+                    </div>
                     <button type="submit" id="submitButton">Entrar</button>
-                    <button id="idkPassButton">Esqueci a senha <label for="imail"><span class="material-symbols-outlined">mail</span></label></button>
+                    <button id="idkPassButton">
+                        <a href="esqueci.html">Esqueci a senha </a>
+                        <span class="material-symbols-outlined">mail</span>
+                    </button>
                 </form>
             </div>
         </section>

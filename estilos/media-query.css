@@ -11,20 +11,6 @@
     --verde-claro: rgb(139, 203, 201);
 }
 
-@media screen and (orientation: landscape){
-    section#login{
-        display: flex;
-        flex-direction: row-reverse;
-        max-width: 950px;
-        height: 500px;
-    }
-    div#imagem{
-        width: 50%;
-        height: 100%;
-        border-radius: 0px 20px 20px 0px;
-    }
-}
-
 @media screen and (min-width: 768px){
     body{
         background-image: linear-gradient(to top, var(--verde), var(--lilas));

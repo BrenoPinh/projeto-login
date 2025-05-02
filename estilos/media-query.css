@@ -26,6 +26,9 @@
         width: 50%;
         border-radius: 20px 0px 0px 20px;
     }
+    div#formulario>form input{
+        transform: translateY(-11.5px);
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -45,5 +48,8 @@
         height: 100%;
         width: 50%;
         border-radius: 0px 20px 20px 0px;
+    }
+    div#formulario>form input{
+        transform: translateY(-11.5px);
     }
 }

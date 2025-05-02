@@ -23,7 +23,7 @@
 
 body,html{
     width: 100vw;
-    height: 96vh;
+    height: 100vh;
     background-color: var(--lilas);
 }
 
@@ -44,6 +44,9 @@ section#login{
         top: 50%;
         left: 50%;
         translate: -50% -50%;
+
+        transition: width .3s, height .3s;
+        transition-timing-function: ease;
 }
 
 div#imagem{
@@ -55,8 +58,11 @@ div#imagem{
 }
 
 div#formulario{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     padding: 10px;
+    justify-content: center;
 }
 
 div#formulario>h1{

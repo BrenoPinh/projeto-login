@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+:root{
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+    --verde-escuro: #387674;
+    --verde-claro: rgb(139, 203, 201);
+}
+
+@media screen and (orientation: landscape){
+    section#login{
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 950px;
+        height: 500px;
+    }
+    div#imagem{
+        width: 50%;
+        height: 100%;
+        border-radius: 0px 20px 20px 0px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    body{
+        background-image: linear-gradient(to top, var(--verde), var(--lilas));
+    }
+    section#login{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        height: 300px;
+    }
+    div#imagem{
+        height: 100%;
+        width: 50%;
+        border-radius: 20px 0px 0px 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body{
+        background-image: linear-gradient(to top, var(--verde), var(--lilas));
+    }
+    section#login{
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 950px;
+        height: 500px;
+    }
+    div#imagem{
+        width: 50%;
+        height: 100%;
+        border-radius: 0px 20px 20px 0px;
+    }
+}

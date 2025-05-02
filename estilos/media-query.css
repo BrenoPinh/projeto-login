@@ -42,8 +42,8 @@
         font-size: 2em;
     }
     div#imagem{
-        width: 50%;
         height: 100%;
+        width: 50%;
         border-radius: 0px 20px 20px 0px;
     }
 }
